@@ -1,11 +1,11 @@
 ﻿CREATE PROCEDURE [dbo].[spPerson_Update]
-    @Id INT,
+@Id INT,
 	@FirstName NVARCHAR(50), 
     @LastName NVARCHAR(50), 
     @MiddleName NVARCHAR(50), 
     @PreferredName NVARCHAR(50), 
     @DateOfBirth DATE, 
-    @IsActive BIT NOT NULL
+    @IsActive BIT 
 AS
 begin
 UPDATE [dbo].[Person]
