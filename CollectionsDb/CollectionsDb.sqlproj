@@ -59,15 +59,21 @@
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
     <Folder Include="dbo\StoredProcedures" />
+    <Folder Include="dbo\StoredProcedures\Person" />
+    <Folder Include="dbo\StoredProcedures\PersonRole" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Person.sql" />
-    <Build Include="dbo\StoredProcedures\spPerson_GetAll.sql" />
-    <Build Include="dbo\StoredProcedures\spPerson_Get.sql" />
-    <Build Include="dbo\StoredProcedures\spPerson_Insert.sql" />
-    <Build Include="dbo\StoredProcedures\spPerson_Update.sql" />
     <Build Include="dbo\Tables\PersonRole.sql" />
     <Build Include="dbo\Tables\PersonRoleAssignment.sql" />
+    <Build Include="dbo\StoredProcedures\Person\spPerson_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Person\spPerson_Get.sql" />
+    <Build Include="dbo\StoredProcedures\Person\spPerson_GetAll.sql" />
+    <Build Include="dbo\StoredProcedures\Person\spPerson_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\PersonRole\spPersonRole_Get.sql" />
+    <Build Include="dbo\StoredProcedures\PersonRole\spPersonRole_GetAll.sql" />
+    <Build Include="dbo\StoredProcedures\PersonRole\spPersonRole_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\PersonRole\spPersonRole_Update.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script_1.PostDeployment.sql" />

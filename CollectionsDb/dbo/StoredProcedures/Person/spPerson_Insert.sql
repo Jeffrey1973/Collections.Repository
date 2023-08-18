@@ -3,8 +3,7 @@
     @LastName NVARCHAR(50), 
     @MiddleName NVARCHAR(50), 
     @PreferredName NVARCHAR(50), 
-    @DateOfBirth DATE, 
-    @IsActive BIT
+    @DateOfBirth DATE
     AS
     begin try
 
@@ -16,8 +15,7 @@
 			[LastName], 
 			[MiddleName], 
 			[PreferredName], 
-			[DateOfBirth], 
-			[IsActive]
+			[DateOfBirth]
 		)
 		VALUES
 		(
@@ -25,8 +23,7 @@
 			@LastName, 
 			@MiddleName, 
 			@PreferredName, 
-			@DateOfBirth, 
-			@IsActive
+			@DateOfBirth
 		);
 
 		commit transaction
