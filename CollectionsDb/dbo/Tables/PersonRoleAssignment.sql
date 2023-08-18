@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[PersonRoleAssignment]
+(
+	[Id] INT NOT NULL PRIMARY KEY Identity, 
+	[PersonId] INT NOT NULL, 
+	[PersonRole] NVARCHAR(50) NOT NULL, 
+	[Created] DATETIME2 NOT NULL DEFAULT GetUTCDate(), 
+	[Updated] DATETIME2 NOT NULL DEFAULT GETUTCDATE(), 
+	[IsActive] BIT NOT NULL DEFAULT 1
+)

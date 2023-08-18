@@ -7,4 +7,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="AccessRole" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="ff7420e8-c25c-4a81-861a-106d21832fdb" ChangeDateTime="08/18/2023 17:34:11">
+    <Property Name="ElementName" Value="[dbo].[PersonRoleAssignment].[PersonRoleId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PersonRoleAssignment]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PersonRole" />
+  </Operation>
 </Operations>

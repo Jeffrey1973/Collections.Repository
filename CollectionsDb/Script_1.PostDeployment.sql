@@ -36,20 +36,20 @@ begin
 
 end
 
---if not exists (select 1 from dbo.[AccessRole])
---begin
+if not exists (select 1 from dbo.PersonRole)
+begin
 
---	Insert into AccessRole ([Role], IsActive) values ('Basic', 1);
---	Insert into AccessRole ([Role], IsActive) values ('Premium', 1);
---	Insert into AccessRole ([Role], IsActive) values ('Admin', 1);
+	Insert into PersonRole([Role], IsActive) values ('Basic', 1);
+	Insert into PersonRole ([Role], IsActive) values ('Premium', 1);
+	Insert into PersonRole ([Role], IsActive) values ('Admin', 1);
 	
---end
+end
 
---if not exists (select 1 from dbo.[PersonToAccessRole])
---begin
+if not exists (select 1 from dbo.[PersonRoleAssignment])
+begin
 
---	Insert into PersonToAccessRole (PersonId, [AccessRole], IsActive) values (1, 'Admin', 1);
---	Insert into PersonToAccessRole (PersonId, [AccessRole], IsActive) values (1, 'Basic', 1);
---	Insert into PersonToAccessRole (PersonId, [AccessRole], IsActive) values (1, 'Premium', 1);
+	Insert into PersonRoleAssignment (PersonId, PersonRole, IsActive) values (1, 'Admin', 1);
+	Insert into PersonRoleAssignment (PersonId, PersonRole, IsActive) values (1, 'Basic', 1);
+	Insert into PersonRoleAssignment (PersonId, PersonRole, IsActive) values (1, 'Premium', 1);
 
---end
+end

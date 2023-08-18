@@ -66,6 +66,8 @@
     <Build Include="dbo\StoredProcedures\spPerson_Get.sql" />
     <Build Include="dbo\StoredProcedures\spPerson_Insert.sql" />
     <Build Include="dbo\StoredProcedures\spPerson_Update.sql" />
+    <Build Include="dbo\Tables\PersonRole.sql" />
+    <Build Include="dbo\Tables\PersonRoleAssignment.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script_1.PostDeployment.sql" />
