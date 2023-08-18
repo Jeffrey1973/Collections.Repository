@@ -6,7 +6,10 @@
     @DateOfBirth DATE, 
     @IsActive BIT
     AS
-    begin
+    begin try
+
+	begin transaction
+
 		INSERT INTO [dbo].[Person]
 		(
 			[FirstName], 
@@ -25,4 +28,12 @@
 			@DateOfBirth, 
 			@IsActive
 		);
-	end
+
+		commit transaction
+
+	end try
+	begin catch
+	    
+	    rollback transaction
+
+	end catch
