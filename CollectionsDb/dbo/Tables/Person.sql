@@ -10,3 +10,16 @@
     [Updated] DATETIME2 NULL DEFAULT GETUTCDATE(), 
     [IsActive] BIT NOT NULL
 )
+
+Go 
+
+CREATE TRIGGER [dbo].[Trigger_PersonUpdate]
+    ON [dbo].[Person]
+    FOR UPDATE
+    AS
+    BEGIN
+        SET NoCount ON
+		update dbo.Person
+			set Updated = GETUTCDATE()
+			where Id in (select Id from inserted);
+    END
