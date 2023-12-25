@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[TagAssignment]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[WorkId] INT NOT NULL,
+	[PersonId] INT NULL, -- custom subject
+
+	[Created] DATETIME2 NULL DEFAULT GETUTCDATE(), 
+    [Updated] DATETIME2 NULL DEFAULT GETUTCDATE(), 
+    [IsActive] BIT NOT NULL DEFAULT 1
+)

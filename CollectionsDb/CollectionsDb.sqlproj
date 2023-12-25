@@ -61,11 +61,15 @@
     <Folder Include="dbo\StoredProcedures" />
     <Folder Include="dbo\StoredProcedures\Person" />
     <Folder Include="dbo\StoredProcedures\PersonRole" />
+    <Folder Include="dbo\StoredProcedures\PersonRoleAssignment" />
+    <Folder Include="dbo\Tables\PersonSchema" />
+    <Folder Include="dbo\Tables\WorkSchema" />
+    <Folder Include="dbo\Tables\AuthorSchema" />
+    <Folder Include="dbo\Tables\CollectionSchema" />
+    <Folder Include="dbo\Tables\IdentificationSchema" />
+    <Folder Include="dbo\Tables\ActionsSchema" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\Person.sql" />
-    <Build Include="dbo\Tables\PersonRole.sql" />
-    <Build Include="dbo\Tables\PersonRoleAssignment.sql" />
     <Build Include="dbo\StoredProcedures\Person\spPerson_Update.sql" />
     <Build Include="dbo\StoredProcedures\Person\spPerson_Get.sql" />
     <Build Include="dbo\StoredProcedures\Person\spPerson_GetAll.sql" />
@@ -74,6 +78,29 @@
     <Build Include="dbo\StoredProcedures\PersonRole\spPersonRole_GetAll.sql" />
     <Build Include="dbo\StoredProcedures\PersonRole\spPersonRole_Insert.sql" />
     <Build Include="dbo\StoredProcedures\PersonRole\spPersonRole_Update.sql" />
+    <Build Include="dbo\StoredProcedures\PersonRoleAssignment\spPersonRoleAssignment_GetAll.sql" />
+    <Build Include="dbo\StoredProcedures\PersonRoleAssignment\spPersonRoleAssignment_Get.sql" />
+    <Build Include="dbo\StoredProcedures\PersonRoleAssignment\spPersonRoleAssignment_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\PersonRoleAssignment\spPersonRoleAssignment_Update.sql" />
+    <Build Include="dbo\Tables\PersonSchema\PersonRoleAssignment.sql" />
+    <Build Include="dbo\Tables\PersonSchema\Person.sql" />
+    <Build Include="dbo\Tables\WorkSchema\Book.sql" />
+    <Build Include="dbo\Tables\AuthorSchema\Author.sql" />
+    <Build Include="dbo\Tables\AuthorSchema\AuthorRole.sql" />
+    <Build Include="dbo\Tables\AuthorSchema\AuthorRoleAssignment.sql" />
+    <Build Include="dbo\Tables\WorkSchema\Work.sql" />
+    <Build Include="dbo\Tables\CollectionSchema\Collection.sql" />
+    <Build Include="dbo\Tables\CollectionSchema\Tag.sql" />
+    <Build Include="dbo\Tables\CollectionSchema\Subject.sql" />
+    <Build Include="dbo\Tables\CollectionSchema\SubjectAssignment.sql" />
+    <Build Include="dbo\Tables\CollectionSchema\CollectionAssignment.sql" />
+    <Build Include="dbo\Tables\CollectionSchema\TagAssignment.sql" />
+    <Build Include="dbo\Tables\IdentificationSchema\DeweyDecimal.sql" />
+    <Build Include="dbo\Tables\IdentificationSchema\ISBN.sql" />
+    <Build Include="dbo\Tables\IdentificationSchema\LCCN.sql" />
+    <Build Include="dbo\Tables\IdentificationSchema\Barcode.sql" />
+    <Build Include="dbo\Tables\IdentificationSchema\BCID.sql" />
+    <Build Include="dbo\Tables\IdentificationSchema\LocClassification.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script_1.PostDeployment.sql" />
@@ -83,5 +110,8 @@
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="CollectionsDb.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\PersonSchema\PersonRole.sql" />
   </ItemGroup>
 </Project>

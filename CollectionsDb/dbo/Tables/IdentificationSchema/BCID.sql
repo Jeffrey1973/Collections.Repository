@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[BCID]
+(
+	[Id] INT NOT NULL PRIMARY KEY
+)

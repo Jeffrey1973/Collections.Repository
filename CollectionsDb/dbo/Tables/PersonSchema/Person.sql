@@ -6,6 +6,7 @@
     [MiddleName] NVARCHAR(50) NULL, 
     [PreferredName] NVARCHAR(50) NULL, 
     [DateOfBirth] DATE NOT NULL, 
+
     [Created] DATETIME2 NULL DEFAULT GETUTCDATE(), 
     [Updated] DATETIME2 NULL DEFAULT GETUTCDATE(), 
     [IsActive] BIT NOT NULL DEFAULT 1
