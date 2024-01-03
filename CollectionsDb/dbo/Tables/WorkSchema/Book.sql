@@ -5,7 +5,6 @@
     [Title] INT NOT NULL,   
     [ContentsSummary] nvarchar(MAX),
     [PhysicalDescription] nvarchar(MAX),
-    [Media] nvarchar(50),
 
     [WeightLbs] decimal null,
     [HeightIn] decimal null,
